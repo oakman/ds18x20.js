@@ -2,7 +2,7 @@
 
 var Driver = require('../lib/driver'),
     exec = require('child_process').exec,
-    execSync = require('execSync').run,
+    execSync = require('child_process').execSync,
     fs = require('fs'),
 
     driver = new Driver(fs, exec, execSync, '/sys/bus/w1'),
@@ -15,7 +15,7 @@ c('isLoaded sync', isLoaded);
 driver.isLoaded(function (err, results) { c('isLoaded async', results); });
 
 if (1 || !isLoaded) {
-    
+
     driver.load(function (err) {
         c('load async');
         if (err) { c(err); c('try running with sudo...'); }

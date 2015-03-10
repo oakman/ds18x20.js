@@ -20,13 +20,12 @@
     "pi"
   ],
   "dependencies": {
-    "async": "~0.2.9",
-    "sandal": "~1.0.1",
-    "execSync": "~1.0.1-pre"
+    "async": "~0.2.10",
+    "sandal": "~3.2.0"
   },
   "devDependencies": {
-    "tap": "~0.4.6",
-    "interpreted": "~0.4.0"
+    "tap": "~0.4.13",
+    "interpreted": "~0.5.0"
   },
   "license": {
     "type": "MIT",
